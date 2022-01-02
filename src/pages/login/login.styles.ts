@@ -1,5 +1,4 @@
 import styled from 'styled-components/native'
-import {StyleSheet} from "react-native";
 
 export const Container = styled.View`  
   height: 100%;
@@ -13,11 +12,15 @@ export const Image = styled.Image`
   width: auto;
 `
 
-export const Form = styled.View`
+export const Form = styled.View`  
   margin-top: -15px;
   padding-top: 7px;
   align-items: center;  
   height: 50%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: #fff;
+  
 `
 
 export const Text = styled.Text`  
@@ -45,18 +48,3 @@ export  const TextEntrar = styled.Text`
   color: #FFF;
   font-size: 30px;   
 `
-
-
-//Revisar, border radius não funcionou no styledComponents
-export const styles = StyleSheet.create(
-    {
-        BorderRadius:
-            {
-                borderTopLeftRadius:20,
-                borderTopRightRadius:20,
-                backgroundColor:"#fff",
-                
-            }
-
-    }
-)
